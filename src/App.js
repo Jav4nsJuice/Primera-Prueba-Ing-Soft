@@ -1,6 +1,7 @@
 // alert("Presiona OK si estas list@ para empezar con javascript");
 const tarea = document.querySelector('#tarea-input');
 const form = document.querySelector('#tarea-form');
+const tipo = document.querySelector('#tipo-select');
 // const form_edad = document.querySelector('#saludador-con-edad-form');
 // const form_genero = document.querySelector('#saludador-con-genero-form');
 // const edad = document.querySelector('#edad-input');
@@ -13,7 +14,7 @@ const form = document.querySelector('#tarea-form');
 
 // alert(nombre.value);
 form.addEventListener("submit", (event) =>{
-    alert("La tarea: " + tarea.value + " se ingresó correctamente.");
+    alert("La tarea: " + tarea.value + " de tipo:" + tipo.value + " se ingresó correctamente.");
 });
 
 // form_edad.addEventListener("submit", (event) =>{

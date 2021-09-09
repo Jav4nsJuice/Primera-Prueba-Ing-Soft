@@ -120,7 +120,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 })({"src/App.js":[function(require,module,exports) {
 // alert("Presiona OK si estas list@ para empezar con javascript");
 var tarea = document.querySelector('#tarea-input');
-var form = document.querySelector('#tarea-form'); // const form_edad = document.querySelector('#saludador-con-edad-form');
+var form = document.querySelector('#tarea-form');
+var tipo = document.querySelector('#tipo-select'); // const form_edad = document.querySelector('#saludador-con-edad-form');
 // const form_genero = document.querySelector('#saludador-con-genero-form');
 // const edad = document.querySelector('#edad-input');
 // const genero = document.querySelector('#genero-input');
@@ -132,7 +133,7 @@ var form = document.querySelector('#tarea-form'); // const form_edad = document.
 // alert(nombre.value);
 
 form.addEventListener("submit", function (event) {
-  alert("La tarea: " + tarea.value + " se ingresó correctamente.");
+  alert("La tarea: " + tarea.value + " de tipo:" + tipo.value + " se ingresó correctamente.");
 }); // form_edad.addEventListener("submit", (event) =>{
 //     if(edad.value <= 18){
 //         alert("Hola Joven/Señorita " + nombre.value);
